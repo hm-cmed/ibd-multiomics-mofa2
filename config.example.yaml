@@ -1,0 +1,33 @@
+# Copy this file to config.yaml and set the paths for your environment.
+# config.yaml is git-ignored so that local paths are never committed.
+#
+# Only project_dir is required to rerun the modelling, statistics and figures from
+# the processed matrices distributed as Supplementary Data 1. The remaining entries
+# are needed only to regenerate those matrices from raw data, which are under
+# controlled access (see the Data availability statement of the paper).
+
+# Working directory: holds the processed view matrices and receives all output.
+project_dir: /path/to/analysis_output
+
+# Root of the raw data archive (controlled access).
+data_root: /path/to/controlled_access_data
+
+# Directory holding the curated amino-acid variant calls
+# (expects Client_aa_mut/all_genes_all_patients.json beneath it),
+# and the microbiome1.json / microbiome2.json / m3metabol.json tables.
+mutation_dir: /path/to/controlled_access_data/mutation_analysis
+
+# Directory of coordinate-sorted RNA-seq BAM files, one subdirectory per sample.
+bam_dir_primary: /path/to/controlled_access_data/bam
+
+# NCBI RefSeq GRCh38 release 109 annotation (publicly available from NCBI).
+gtf: /path/to/GRCh38_NCBI_109.20200522.gtf
+
+# Clinical variables (CRP, fecal calprotectin).
+clinical_xlsx: /path/to/controlled_access_data/clinical.xlsx
+
+# Cohort identifier list with UC/CD diagnosis.
+cohort_xlsx: /path/to/controlled_access_data/cohort_ids.xlsx
+
+# Third metabolome measurement batch (CE-MS quantification report).
+metabolome_batch3_xlsx: /path/to/controlled_access_data/metabolome_batch3.xlsx
