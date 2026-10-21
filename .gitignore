@@ -1,0 +1,22 @@
+# 自分の環境のパス（README の説明どおり、Git に入れない）
+config.yaml
+
+# 解析データ・患者由来データ（管理されたアクセスのみ。誤って入れないため）
+*.bam
+*.bai
+*.xlsx
+*.hdf5
+*.h5
+*.vcf
+*.vcf.gz
+data/
+output/
+analysis_output/
+
+# Python・OS の一時ファイル
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.DS_Store
+Thumbs.db
